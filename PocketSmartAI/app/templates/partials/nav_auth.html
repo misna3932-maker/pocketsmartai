@@ -1,0 +1,5 @@
+{% from 'partials/icons.html' import icon %}
+<nav class="nav nav-auth">
+  <a class="brand brand-light brand-app" href="/dashboard"><span class="brand-mark">▰</span>PocketSmart</a>
+  <div class="nav-links"><a class="{% if active=='home' %}active{% endif %}" href="/planner/home">{{ icon('home') }}Home Planner</a><a class="{% if active=='party' %}active{% endif %}" href="/planner/party">{{ icon('party') }}Party Planner</a><a class="{% if active=='jewelry' %}active{% endif %}" href="/planner/jewelry">{{ icon('diamond') }}Jewelry Planner</a><a class="{% if active=='history' %}active{% endif %}" href="/history">{{ icon('history') }}History</a><a href="/logout">{{ icon('logout') }}Logout</a></div>
+</nav>
